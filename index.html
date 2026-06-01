@@ -35,7 +35,7 @@
         Guide pour votre séjour au <strong>4 Avenue des Tamaris</strong>
       </div>
       <div class="header-tools">
-       <nav class="language-switcher" aria-label="Choix de la langue">
+        <nav class="language-switcher" aria-label="Choix de la langue">
           <a href="index.html" aria-current="page">Français</a>
           <a href="en.html">English</a>
         </nav>
@@ -78,30 +78,20 @@
         </div>
 
         <div class="grid cards-essentials">
-          <article class="card highlight-card">
+          
+          <!-- NOUVEAU BLOC WI-FI SÉCURISÉ -->
+          <article class="card highlight-card qr-card">
             <div class="card-heading">
               <h3>Wi-Fi</h3>
-              <span class="pill">Très utilisé</span>
+              <span class="pill">Connexion rapide</span>
             </div>
-            <dl class="key-value">
-              <div>
-                <dt>Réseau</dt>
-                <dd>livebox-B702</dd>
-              </div>
-              <div>
-                <dt>Mot de passe</dt>
-                <dd>cestm@vill@</dd>
-              </div>
-            </dl>
-            <div class="inline-actions">
-              <button class="button button-secondary copy-button" data-copy="livebox-B702" data-copy-default-label="Copier réseau" data-copy-success-label="Copié !" data-copy-error-label="Erreur">
-                Copier réseau
-              </button>
-              <button class="button button-secondary copy-button" data-copy="cestm@vill@" data-copy-default-label="Copier mot de passe" data-copy-success-label="Copié !" data-copy-error-label="Erreur">
-                Copier mot de passe
-              </button>
-            </div>
+            <p><strong>Réseau :</strong> livebox-B702</p>
+            <p class="muted">
+              Scannez ce QR code avec l'appareil photo de votre téléphone pour vous connecter automatiquement au réseau sans avoir à saisir de mot de passe.
+            </p>
+            <img src="assets/images/wifi_qr.jpg" alt="QR Code Wi-Fi" style="width:100%; max-width: 250px; border-radius:8px; margin: 15px auto; display: block;" />
           </article>
+          <!-- FIN DU BLOC WI-FI -->
 
           <article class="card">
             <h3>Horaires</h3>
@@ -243,32 +233,5 @@
         Partagé pour faciliter le séjour de nos invités.
       </p>
     </footer>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const copyButtons = document.querySelectorAll(".copy-button");
-        copyButtons.forEach(button => {
-          button.addEventListener("click", function() {
-            const textToCopy = this.getAttribute("data-copy");
-            const defaultLabel = this.getAttribute("data-copy-default-label");
-            const successLabel = this.getAttribute("data-copy-success-label");
-            const errorLabel = this.getAttribute("data-copy-error-label");
-            
-            navigator.clipboard.writeText(textToCopy).then(() => {
-              this.textContent = successLabel;
-              setTimeout(() => {
-                this.textContent = defaultLabel;
-              }, 2000);
-            }).catch(err => {
-              console.error("Erreur de copie : ", err);
-              this.textContent = errorLabel;
-              setTimeout(() => {
-                this.textContent = defaultLabel;
-              }, 2000);
-            });
-          });
-        });
-      });
-    </script>
   </body>
 </html>
