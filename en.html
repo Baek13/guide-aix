@@ -77,30 +77,20 @@
         </div>
 
         <div class="grid cards-essentials">
-          <article class="card highlight-card">
+          
+          <!-- NOUVEAU BLOC WI-FI SÉCURISÉ -->
+          <article class="card highlight-card qr-card">
             <div class="card-heading">
               <h3>Wi-Fi</h3>
-              <span class="pill">Most used</span>
+              <span class="pill">Quick connect</span>
             </div>
-            <dl class="key-value">
-              <div>
-                <dt>Network</dt>
-                <dd>livebox-B702</dd>
-              </div>
-              <div>
-                <dt>Password</dt>
-                <dd>cestm@vill@</dd>
-              </div>
-            </dl>
-            <div class="inline-actions">
-              <button class="button button-secondary copy-button" data-copy="livebox-B702" data-copy-default-label="Copy network" data-copy-success-label="Copied!" data-copy-error-label="Error">
-                Copy network
-              </button>
-              <button class="button button-secondary copy-button" data-copy="cestm@vill@" data-copy-default-label="Copy password" data-copy-success-label="Copied!" data-copy-error-label="Error">
-                Copy password
-              </button>
-            </div>
+            <p><strong>Network:</strong> livebox-B702</p>
+            <p class="muted">
+              Scan this QR code with your phone's camera to automatically join the network without typing the password.
+            </p>
+            <img src="assets/images/wifi_qr.jpg" alt="Wi-Fi QR Code" style="width:100%; max-width: 250px; border-radius:8px; margin: 15px auto; display: block;" />
           </article>
+          <!-- FIN DU BLOC WI-FI -->
 
           <article class="card">
             <h3>Check-in & Check-out</h3>
@@ -242,32 +232,5 @@
         Shared to make our guests' stay easier.
       </p>
     </footer>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const copyButtons = document.querySelectorAll(".copy-button");
-        copyButtons.forEach(button => {
-          button.addEventListener("click", function() {
-            const textToCopy = this.getAttribute("data-copy");
-            const defaultLabel = this.getAttribute("data-copy-default-label");
-            const successLabel = this.getAttribute("data-copy-success-label");
-            const errorLabel = this.getAttribute("data-copy-error-label");
-            
-            navigator.clipboard.writeText(textToCopy).then(() => {
-              this.textContent = successLabel;
-              setTimeout(() => {
-                this.textContent = defaultLabel;
-              }, 2000);
-            }).catch(err => {
-              console.error("Copy error: ", err);
-              this.textContent = errorLabel;
-              setTimeout(() => {
-                this.textContent = defaultLabel;
-              }, 2000);
-            });
-          });
-        });
-      });
-    </script>
   </body>
 </html>
