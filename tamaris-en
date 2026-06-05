@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamaris Room Guide | Aix-en-Provence</title>
+    <meta name="description" content="Guest guide for your stay in the Tamaris room, Aix-en-Provence." />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="theme-color" content="#f2eadf" />
+    
+    <link rel="icon" href="https://vdovkn.github.io/bristol-guest-guide-site/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://vdovkn.github.io/bristol-guest-guide-site/styles.css" />
+    
+    <style>
+      html {
+        scroll-padding-top: 140px; 
+        scroll-behavior: smooth; 
+      }
+
+      .rules-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+      .badge {
+        display: inline-block;
+        background: #eee;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="announcement">
+        Guest guide for your stay - <strong>Tamaris Room</strong>
+      </div>
+      <div class="header-tools">
+        <nav class="language-switcher" aria-label="Language selection">
+          <!-- LIENS ADAPTÉS POUR RESTER SUR LES NOUVELLES PAGES -->
+          <a href="tamaris.html">Français</a>
+          <a href="tamaris-en.html" aria-current="page">English</a>
+        </nav>
+      </div>
+      <nav class="top-nav" aria-label="Section navigation">
+        <a href="#welcome">Welcome</a>
+        <a href="#essentials">Essentials</a>
+        <a href="#house-rules">House Rules</a>
+        <a href="#photo-guide">Visual Guide</a>
+        <a href="#departure">Before you leave</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="welcome">
+        <div class="hero-copy">
+          <p class="eyebrow">Guest Guide - Aix-en-Provence</p>
+          <h1>Welcome to my home!</h1>
+          <p class="lede">
+            Thank you for choosing to stay here! This guide brings together all the essentials, house rules, and practical details for the Tamaris room to make your stay as comfortable as possible.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://maps.google.com/?q=4+Avenue+des+Tamaris,+Aix-en-Provence" target="_blank" rel="noreferrer">Open in Maps</a>
+            <a class="button button-secondary" href="#essentials">Jump to essentials</a>
+          </div>
+          <div class="address-block">
+            <p class="label">Address</p>
+            <p>4 Avenue des Tamaris<br>13100 Aix-en-Provence<br>Provence-Alpes-Côte d'Azur</p>
+          </div>
+        </div>
+        <div class="hero-art">
+          <!-- IMAGE D'ACCUEIL AVEC LE NOUVEAU NOM _2 -->
+          <img src="assets/images/Ex_1_2.jpg" alt="Terrace view" width="903" height="1200" fetchpriority="high" />
+        </div>
+      </section>
+
+      <section class="section-shell" id="essentials">
+        <div class="section-heading">
+          <p class="eyebrow">At a glance</p>
+          <h2>Essentials for your arrival</h2>
+        </div>
+
+        <div class="grid cards-essentials">
+          <article class="card highlight-card qr-card">
+            <div class="card-heading">
+              <h3>Wi-Fi</h3>
+              <span class="pill">Quick connect</span>
+            </div>
+            <p><strong>Network:</strong> livebox-B702</p>
+            <p class="muted">
+              Scan this QR code with your phone's camera to automatically join the network without typing the password.
+            </p>
+            <img src="assets/images/wifi_qr.jpg" alt="Wi-Fi QR Code" style="width:100%; max-width: 250px; border-radius:8px; margin: 15px auto; display: block;" />
+          </article>
+
+          <article class="card">
+            <h3>Check-in & Check-out</h3>
+            <ul class="plain-list">
+              <li><strong>Check-in:</strong> From 18:00 (6:00 PM)</li>
+              <li><strong>Check-out:</strong> Before 11:00 (11:00 AM)</li>
+            </ul>
+            <p class="muted">
+              To facilitate your arrival, please let me know your estimated time of arrival. In case of significant delay, please inform me as well.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>How to access the property</h3>
+            <p>
+              The house is located near the Aix-en-Provence hospital, just past the emergency department, at the beginning of Chemin des Tamaris.
+            </p>
+            <ul class="plain-list">
+              <li><strong>Landmarks:</strong> It is a house with a yellow wall and a dark grey gate, located just behind the MRI building (a dark grey prefab). You will often see a red estate car (station wagon) parked in front.</li>
+              <li><strong>To enter:</strong> You can ring the bell so I can open the gate for you. If I am not there, you can type the code on the keypad to open it.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Contact</h3>
+            <p>
+              If you have any questions or special requests, don't hesitate to contact me. I wish you an excellent stay and remain at your disposal.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell section-tinted" id="house-rules">
+        <div class="section-heading">
+          <p class="eyebrow">Good to know</p>
+          <h2>House Manual & Rules</h2>
+          <p>
+            Please follow these few rules to be a respectful guest and avoid any issues during your stay.
+          </p>
+        </div>
+
+        <div class="rules-grid">
+          <article class="card">
+            <h3>Who can stay</h3>
+            <ul class="plain-list">
+              <li><span class="badge">👥 Capacity</span> Designed for your comfort</li>
+              <li><span class="badge">🐾 Pets</span> No pets allowed</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>House rules</h3>
+            <ul class="plain-list">
+              <li><span class="badge">🌙 Quiet hours</span> 21:00 - 09:00 (9 PM - 9 AM)</li>
+              <li><span class="badge">🚭 Smoking</span> No smoking inside</li>
+              <li><span class="badge">🎉 Events</span> No parties or events</li>
+              <li><span class="badge">📷 Photography</span> No commercial photography allowed</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Access & Maintenance</h3>
+            <ul class="plain-list">
+              <li><span class="badge">🔑 Entry</span> Self check-in (or with building staff)</li>
+              <li><span class="badge">🍽️ Dishes</span> Please wash your dishes before leaving.</li>
+              <li><span class="badge">🗑️ Trash</span> Please take out the trash when leaving.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="photo-guide">
+        <div class="section-heading">
+          <p class="eyebrow">Visuals</p>
+          <h2>Overview & Itinerary</h2>
+        </div>
+
+        <div class="grid appliance-grid">
+          <!-- TOUTES LES IMAGES ONT ÉTÉ MISES À JOUR AVEC LE SUFFIXE _2 -->
+          <article class="card appliance-card">
+            <h3>1. Itinerary</h3>
+            <p>The route from the bus station to the house.</p>
+            <img src="assets/images/Gare_routiere_vers_Maison_Tamaris_1_2.jpg" alt="Itinerary" style="width:100%; border-radius:8px; margin-top:10px;" />
+          </article>
+          
+          <article class="card appliance-card">
+            <h3>2. The entrance</h3>
+            <p>Direct access to the apartment via the terrace.</p>
+            <img src="assets/images/Ex_1_2.jpg" alt="Apartment entrance" style="width:100%; border-radius:8px; margin-top:10px;" />
+          </article>
+
+          <article class="card appliance-card">
+            <h3>3. The bedroom</h3>
+            <p>The sleeping area with a double bed and lounge.</p>
+            <img src="assets/images/Tamaris_2_2.jpg" alt="Bedroom" style="width:100%; border-radius:8px; margin-top:10px;" />
+          </article>
+
+          <article class="card appliance-card">
+            <h3>4. Workspace</h3>
+            <p>A dedicated desk area in the room.</p>
+            <img src="assets/images/Tamaris_5_2.jpg" alt="Workspace" style="width:100%; border-radius:8px; margin-top:10px;" />
+          </article>
+
+          <article class="card appliance-card">
+            <h3>5. Room entrance</h3>
+            <p>The bright entrance facing the courtyard.</p>
+            <img src="assets/images/Tamaris_1_2.jpg" alt="Room entrance" style="width:100%; border-radius:8px; margin-top:10px;" />
+          </article>
+
+          <article class="card appliance-card">
+            <h3>6. The neighborhood</h3>
+            <p>The beautiful City Hall square in the center.</p>
+            <img src="assets/images/Ex_2_2.jpg" alt="City Hall" style="width:100%; border-radius:8px; margin-top:10px;" />
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell" id="departure">
+        <div class="section-heading">
+          <p class="eyebrow">Before you leave</p>
+          <h2>Check-out procedure</h2>
+          <p>Here is a quick checklist before you hit the road.</p>
+        </div>
+
+        <div class="grid departure-grid">
+          <article class="card">
+            <ul class="plain-list checklist">
+              <li><strong>Dishes & Trash:</strong> Please do your dishes and take out the garbage.</li>
+              <li><strong>Energy:</strong> Turn off lights and appliances.</li>
+              <li><strong>Ventilation:</strong> I would appreciate it if you could leave a window open to air out the place.</li>
+              <li><strong>Check-out time:</strong> The apartment must be vacated by 11:00 AM, as the cleaner will arrive at this time to prepare the accommodation.</li>
+            </ul>
+          </article>
+          <article class="card farewell-card">
+            <h3>Returning the keys</h3>
+            <p>
+              Please put the keys in the lower grey mailbox located on the yellow wall in front of the house.
+            </p>
+            <p style="margin-top: 1rem;">
+              <em>I hope you had a great stay. Thank you so much for your understanding and cooperation!</em>
+            </p>
+            <img src="assets/images/remise_des_cles.jpg" alt="Mailbox" style="width:100%; max-width: 250px; border-radius:8px; margin-top:10px;" />
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>4 Avenue des Tamaris, Aix-en-Provence</p>
+      <p class="muted">
+        Shared to make our guests' stay easier.
+      </p>
+    </footer>
+  </body>
+</html>
