@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://vdovkn.github.io/bristol-guest-guide-site/styles.css" />
     
     <style>
+      /* --- NOUVEAU : Correction du menu fixe et défilement doux --- */
+      html {
+        scroll-padding-top: 140px; 
+        scroll-behavior: smooth; 
+      }
+
       .rules-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -66,7 +72,8 @@
           </div>
         </div>
         <div class="hero-art">
-          <img src="assets/images/al_6.jpg" alt="Terrace view" width="903" height="1200" fetchpriority="high" />
+          <!-- CHEMIN CORRIGÉ SUR LA BASE DE LA CAPTURE D'ÉCRAN -->
+          <img src="assets/images/Ex_1.jpg" alt="Terrace view" width="903" height="1200" fetchpriority="high" />
         </div>
       </section>
 
@@ -77,7 +84,6 @@
         </div>
 
         <div class="grid cards-essentials">
-          
           <article class="card highlight-card qr-card">
             <div class="card-heading">
               <h3>Wi-Fi</h3>
@@ -221,7 +227,6 @@
           </article>
         </div>
       </section>
-
     </main>
 
     <footer class="site-footer">
