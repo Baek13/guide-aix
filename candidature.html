@@ -9,23 +9,68 @@
     <link rel="stylesheet" href="styles.css" />
     
     <style>
-      html { scroll-padding-top: 140px; scroll-behavior: smooth; }
-      .iframe-container {
-        width: 100%; max-width: 900px; margin: 0 auto;
-        border-radius: 8px; overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1); background-color: #f9f9f9;
+      html {
+        scroll-padding-top: 140px; 
+        scroll-behavior: smooth; 
       }
-      iframe { width: 100%; height: 1200px; border: none; display: block; }
-      .fallback-link {
-        text-align: center; margin-top: 20px; padding: 15px;
-        background: #fff; border-radius: 8px; border: 1px solid #ddd;
+      .candidature-box {
+        background: #fff;
+        border-radius: 8px;
+        padding: 40px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        max-width: 700px;
+        margin: 0 auto 40px auto;
+        border: 1px solid #e0e0e0;
       }
-      .fallback-link p { margin-bottom: 10px; }
+      .candidature-box h2 {
+        margin-top: 0;
+        color: #1f3a5f;
+      }
+      .candidature-box p {
+        font-size: 1.1rem;
+        color: #555;
+        margin-bottom: 30px;
+      }
+      /* Style pour un gros bouton bien visible */
+      .btn-cta {
+        display: inline-block;
+        background-color: #d97757;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 15px 30px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+      .btn-cta:hover {
+        background-color: #c06548;
+        color: white;
+      }
+      .info-list {
+        text-align: left;
+        margin: 30px auto 0 auto;
+        max-width: 500px;
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 6px;
+      }
+      .info-list ul {
+        margin: 0;
+        padding-left: 20px;
+        color: #444;
+      }
+      .info-list li {
+        margin-bottom: 10px;
+      }
     </style>
   </head>
   <body>
     <header class="site-header">
-      <div class="announcement"><strong>Colocation - Dépôt de dossier</strong></div>
+      <div class="announcement">
+        <strong>Colocation - Dépôt de dossier</strong>
+      </div>
       <nav class="top-nav">
         <a href="index.html">Retour à l'accueil</a>
         <a href="tamaris.html">Guide Tamaris</a>
@@ -37,24 +82,36 @@
         <div class="hero-copy">
           <p class="eyebrow">Colocation Étudiante</p>
           <h1>Soumettre votre dossier</h1>
-          <p class="lede">Veuillez remplir le formulaire ci-dessous et joindre les pièces justificatives demandées pour valider votre candidature.</p>
+          <p class="lede">
+            Préparez vos pièces justificatives au format numérique (PDF ou images) pour finaliser votre demande.
+          </p>
         </div>
       </section>
 
       <section class="section-shell">
-        <div class="iframe-container">
-          <iframe src="https://script.google.com/macros/s/AKfycbyQf--e1a44ZiqOBrCOvEvooZq50oU1PYbunnH7fyQHHUnb0yZDg3AYStnDFXuHVH9JFw/exec"></iframe>
-        </div>
-        
-        <div class="fallback-link">
-          <p>Le formulaire ne s'affiche pas correctement (page blanche ou erreur Google) ?</p>
-          <a class="button button-primary" href="https://script.google.com/macros/s/AKfycbyQf--e1a44ZiqOBrCOvEvooZq50oU1PYbunnH7fyQHHUnb0yZDg3AYStnDFXuHVH9JFw/exec" target="_blank">
-            Ouvrir le formulaire dans une nouvelle fenêtre
+        <div class="candidature-box">
+          <h2>Accès au formulaire sécurisé</h2>
+          <p>Pour garantir la sécurité de vos données et le bon envoi de vos fichiers, notre formulaire de candidature est hébergé directement sur les serveurs sécurisés de Google.</p>
+          
+          <a class="btn-cta" href="https://script.google.com/macros/s/AKfycbyQf--e1a44ZiqOBrCOvEvooZq50oU1PYbunnH7fyQHHUnb0yZDg3AYStnDFXuHVH9JFw/exec" target="_blank" rel="noopener noreferrer">
+            Ouvrir le formulaire de candidature
           </a>
+
+          <div class="info-list">
+            <p><strong>Avant de cliquer, assurez-vous d'avoir :</strong></p>
+            <ul>
+              <li>La pièce d'identité du candidat et du garant.</li>
+              <li>Les 3 derniers bulletins de salaire du garant.</li>
+              <li>Les avis d'imposition N-1 et N-2 du garant.</li>
+              <li>L'acte de cautionnement complété et signé.</li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><p>4 Avenue des Tamaris, Aix-en-Provence</p></footer>
+    <footer class="site-footer">
+      <p>4 Avenue des Tamaris, Aix-en-Provence</p>
+    </footer>
   </body>
 </html>
