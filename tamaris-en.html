@@ -167,8 +167,8 @@
       .rules-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
       .badge { display: inline-block; background: #eee; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.85rem; margin-bottom: 0.5rem; }
 
-      .checklist { list-style: none; padding-left: 0; }
-      .checklist li { padding-left: 1.8rem; position: relative; }
+      .checklist { list-style: none; padding-left: 0; margin-top: 0; }
+      .checklist li { padding-left: 1.8rem; position: relative; margin-bottom: 0.8rem; }
       .checklist li::before { content: "\2022"; position: absolute; left: 0.6rem; top: -0.03rem; color: var(--accent-warm); font-size: 1.4rem; }
 
       .site-footer { padding: 2rem 0 3rem; text-align: center; }
@@ -351,24 +351,76 @@
         </div>
       </section>
 
-      <!-- SECTION : Recommendations -->
       <section class="section-shell" id="recommendations">
         <div class="section-heading">
-          <p class="eyebrow">Discover</p>
+          <p class="eyebrow">Our favorite spots</p>
           <h2>Recommendations</h2>
-          <p>Aix-en-Provence has so much to offer. Here are a few places to visit.</p>
+          <p>A few suggestions to fully enjoy Aix-en-Provence.</p>
         </div>
-        <!-- Vous pouvez ajouter vos cartes de recommandations ici -->
+        
+        <div class="grid cards-essentials" style="align-items: stretch;">
+          <article class="card">
+            <h3>Where to eat</h3>
+            <ul class="plain-list">
+              <li><strong>Sin Ky</strong> — an excellent Vietnamese restaurant.</li>
+              <li><strong>Da Noemi</strong> — a very popular little Italian place.</li>
+              <li><strong>Le Four Aixois</strong> — a safe bet for pizzas.</li>
+              <li><strong>Le Galifet</strong> — a great spot for lunch; beautiful setting and more affordable at noon than in the evening.</li>
+              <li><strong>Rue Boulegon</strong> — several very pleasant restaurants and terraces.</li>
+            </ul>
+          </article>
+          
+          <article class="card">
+            <h3>Grab a drink</h3>
+            <ul class="plain-list">
+              <li><strong>Brasserie du Grillon</strong> (Cours Mirabeau) — a true Aix institution with very reasonable prices, perfect for a drink on the terrace.</li>
+              <li><strong>Le Vieux Tonneau</strong> — nice for a drink with a light snack, mostly frequented by locals.</li>
+              <li><strong>Hôtel de Caumont</strong> — a drink in a particularly charming garden.</li>
+              <li><strong>Béchard</strong> (Cours Mirabeau) — famous pastry shop, perfect for a sweet break.</li>
+            </ul>
+          </article>
+          
+          <article class="card">
+            <h3>Markets (Mornings)</h3>
+            <ul class="plain-list">
+              <li><strong>Marché provençal</strong> (fruits, vegetables, crafts, fabrics...) — Tuesday, Thursday, and Saturday mornings, Place de Verdun and in several downtown streets.</li>
+              <li><strong>Marché de la place Richelme</strong> (food) — every morning.</li>
+              <li><strong>Marché aux fleurs</strong> (flower market) — Tuesday, Thursday, and Saturday mornings, Place de l'Hôtel de Ville.</li>
+              <li><strong>Marché aux vêtements</strong> (clothing market) — Tuesday, Thursday, and Saturday mornings, Cours Mirabeau.</li>
+            </ul>
+          </article>
+        </div>
+        
+        <p style="text-align: center; margin-top: 2rem; color: var(--muted);">We wish you an excellent stay in Aix-en-Provence!</p>
       </section>
 
-      <!-- SECTION : Departure -->
       <section class="section-shell section-tinted" id="departure">
         <div class="section-heading">
-          <p class="eyebrow">Leaving</p>
-          <h2>Before you leave</h2>
-          <p>A quick checklist before you hand back the keys.</p>
+          <p class="eyebrow">Before leaving</p>
+          <h2>Departure procedure</h2>
+          <p>A quick checklist before you hit the road.</p>
         </div>
-        <!-- Vous pouvez ajouter vos instructions de départ ici -->
+        
+        <div class="grid departure-grid">
+          <article class="card">
+            <ul class="checklist">
+              <li><strong>Dishes and Trash:</strong> Please remember to wash your dishes and take out the trash.</li>
+              <li><strong>Energy:</strong> Turn off lights and appliances.</li>
+              <li><strong>Ventilation:</strong> I would appreciate it if you could leave the bathroom window open to air out the place.</li>
+              <li><strong>Cleaning Info:</strong> The vacuum is located next to the fridge, cleaning products for the bathroom and kitchen are in the top kitchen cupboard.</li>
+              <li><strong>Cleaning Info:</strong> Please remember to strip the bed and leave the sheets on the washing machine.</li>
+              <li><strong>Cleaning Info:</strong> If you don't want to bother with cleaning or cannot do it (very early departure, etc.), we offer a professional cleaning service for €40 per stay.</li>
+              <li><strong>Check-out time:</strong> The apartment must be vacated by 11:00 AM, as the cleaner will arrive at this time to prepare the accommodation.</li>
+            </ul>
+          </article>
+          
+          <article class="card">
+            <h3>Returning the keys</h3>
+            <p>You must put the keys in the bottom grey mailbox located on the yellow wall in front of the house.</p>
+            <p style="font-style: italic; color: var(--muted); margin-bottom: 1rem;">I hope you had a great stay. Thank you very much for your understanding and cooperation!</p>
+            <img src="assets/images/remise_des_cles.jpg" alt="Mailbox for returning keys" style="width:100%; max-width:350px; border-radius:8px; display:block; margin: 0 auto;" />
+          </article>
+        </div>
       </section>
 
     </main>
