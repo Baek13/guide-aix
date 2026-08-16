@@ -328,24 +328,28 @@
           <h2>Aperçu et Itinéraire</h2>
         </div>
 
-        <div class="grid appliance-grid">
-          <article class="card appliance-card">
+        <!-- Ajout de align-items: stretch pour que toutes les cartes fassent la même hauteur -->
+        <div class="grid appliance-grid" style="align-items: stretch;">
+          
+          <!-- Ajout de display: flex sur les cartes pour pousser l'image vers le bas -->
+          <article class="card appliance-card" style="display: flex; flex-direction: column;">
             <h3>1. Itinéraire</h3>
             <p>Le trajet depuis la gare routière vers la maison.</p>
-            <img src="assets/images/al_1.jpg" alt="Itinéraire" style="width:100%; border-radius:8px; margin-top:10px;" />
+            <img src="assets/images/al_1.jpg" alt="Itinéraire" style="width:100%; height: 350px; object-fit: cover; border-radius:8px; margin-top: auto;" />
           </article>
           
-          <article class="card appliance-card">
+          <article class="card appliance-card" style="display: flex; flex-direction: column;">
             <h3>2. Digicode & Sonnette</h3>
             <p>Vous pouvez sonner ou utiliser le digicode pour ouvrir le portail.</p>
-            <img src="assets/images/al_2.jpg" alt="Sonnette et digicode" style="width:100%; border-radius:8px; margin-top:10px;" />
+            <img src="assets/images/al_2.jpg" alt="Sonnette et digicode" style="width:100%; height: 350px; object-fit: cover; border-radius:8px; margin-top: auto;" />
           </article>
 
-          <article class="card appliance-card">
+          <article class="card appliance-card" style="display: flex; flex-direction: column;">
             <h3>3. L'entrée</h3>
             <p>L'accès direct à l'appartement par la terrasse.</p>
-            <img src="assets/images/Tamaris_3.jpg" alt="Accès à la terrasse" style="width:100%; border-radius:8px; margin-top:10px;" />
+            <img src="assets/images/Tamaris_3.jpg" alt="Accès à la terrasse" style="width:100%; height: 350px; object-fit: cover; border-radius:8px; margin-top: auto;" />
           </article>
+
         </div>
       </section>
 
