@@ -181,8 +181,7 @@
       @media (min-width: 980px) {
         .section-shell { margin-top: 2rem; padding-top: 1.5rem; }
         .top-nav { justify-content: center; }
-        /* AJOUT: .appliance-grid pour l'affichage en 3 colonnes de la galerie photo */
-        .cards-essentials, .appliance-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .cards-essentials { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       }
     </style>
   </head>
@@ -238,7 +237,6 @@
         </div>
 
         <div class="grid cards-essentials">
-          <!-- Carte Wi-Fi -->
           <article class="card highlight-card qr-card">
             <div class="card-heading">
               <h3>Wi-Fi</h3>
@@ -324,7 +322,6 @@
         </div>
       </section>
 
-      <!-- SECTION : MODIFIÉE EN 3 CARTES -->
       <section class="section-shell" id="photo-guide">
         <div class="section-heading">
           <p class="eyebrow">Visuals</p>
@@ -338,16 +335,22 @@
             <img src="assets/images/al_1.jpg" alt="Itinerary" style="width:100%; border-radius:8px; margin-top:10px;" />
           </article>
           
+          <!-- Modification ici : les 2 images forcées côte à côte dans une grille interne -->
           <article class="card appliance-card">
-            <h3>2. Keypad & Bell</h3>
-            <p>You can ring the bell or use the keypad to open the gate.</p>
-            <img src="assets/images/al_2.jpg" alt="Bell and keypad" style="width:100%; border-radius:8px; margin-top:10px;" />
-          </article>
-
-          <article class="card appliance-card">
-            <h3>3. The entrance</h3>
+            <h3>2. The entrance</h3>
             <p>Direct access to the apartment via the terrace.</p>
-            <img src="assets/images/Tamaris_12.jpg" alt="Entrance and access" style="width:100%; border-radius:8px; margin-top:10px;" />
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px;">
+              <div>
+                <span style="display: block; font-size: 0.85rem; margin-bottom: 5px; color: var(--muted);">Keypad & Bell</span>
+                <img src="assets/images/al_2.jpg" alt="Bell and keypad" style="width:100%; border-radius:8px; height: 250px; object-fit: cover;" />
+              </div>
+              <div>
+                <span style="display: block; font-size: 0.85rem; margin-bottom: 5px; color: var(--muted);">Terrace access</span>
+                <img src="assets/images/Tamaris_12.jpg" alt="Entrance and access" style="width:100%; border-radius:8px; height: 250px; object-fit: cover;" />
+              </div>
+            </div>
+            
           </article>
         </div>
       </section>
@@ -359,7 +362,7 @@
           <h2>Recommendations</h2>
           <p>Aix-en-Provence has so much to offer. Here are a few places to visit.</p>
         </div>
-        <!-- Vous pouvez ajouter vos cartes de recommandations ici -->
+        <!-- Vous pouvez ajouter vos cartes de recommandations ici (comme sur en.html) -->
       </section>
 
       <!-- SECTION : Departure -->
@@ -369,7 +372,7 @@
           <h2>Before you leave</h2>
           <p>A quick checklist before you hand back the keys.</p>
         </div>
-        <!-- Vous pouvez ajouter vos instructions de départ ici -->
+        <!-- Vous pouvez ajouter vos instructions de départ ici (comme sur en.html) -->
       </section>
 
     </main>
