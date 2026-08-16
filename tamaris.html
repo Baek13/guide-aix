@@ -167,8 +167,8 @@
       .rules-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
       .badge { display: inline-block; background: #eee; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.85rem; margin-bottom: 0.5rem; }
 
-      .checklist { list-style: none; padding-left: 0; }
-      .checklist li { padding-left: 1.8rem; position: relative; }
+      .checklist { list-style: none; padding-left: 0; margin-top: 0; }
+      .checklist li { padding-left: 1.8rem; position: relative; margin-bottom: 0.8rem; }
       .checklist li::before { content: "\2022"; position: absolute; left: 0.6rem; top: -0.03rem; color: var(--accent-warm); font-size: 1.4rem; }
 
       .site-footer { padding: 2rem 0 3rem; text-align: center; }
@@ -328,10 +328,8 @@
           <h2>Aperçu et Itinéraire</h2>
         </div>
 
-        <!-- Ajout de align-items: stretch pour que toutes les cartes fassent la même hauteur -->
         <div class="grid appliance-grid" style="align-items: stretch;">
           
-          <!-- Ajout de display: flex sur les cartes pour pousser l'image vers le bas -->
           <article class="card appliance-card" style="display: flex; flex-direction: column;">
             <h3>1. Itinéraire</h3>
             <p>Le trajet depuis la gare routière vers la maison.</p>
@@ -353,24 +351,76 @@
         </div>
       </section>
 
-      <!-- SECTION : Recommendations -->
       <section class="section-shell" id="recommendations">
         <div class="section-heading">
-          <p class="eyebrow">Découvrir</p>
-          <h2>Sorties et Recommandations</h2>
-          <p>Aix-en-Provence a beaucoup à offrir. Voici quelques suggestions.</p>
+          <p class="eyebrow">Nos bonnes adresses</p>
+          <h2>Sorties & recommandations</h2>
+          <p>Quelques suggestions pour profiter pleinement d'Aix-en-Provence.</p>
         </div>
-        <!-- Vous pouvez ajouter vos cartes de recommandations ici -->
+        
+        <div class="grid cards-essentials" style="align-items: stretch;">
+          <article class="card">
+            <h3>Où manger</h3>
+            <ul class="plain-list">
+              <li><strong>Sin Ky</strong> — un excellent restaurant vietnamien.</li>
+              <li><strong>Da Noemi</strong> — un petit italien très apprécié.</li>
+              <li><strong>Le Four Aixois</strong> — une valeur sûre côté pizzas.</li>
+              <li><strong>Le Galifet</strong> — une très belle adresse pour le déjeuner ; cadre superbe et tarifs plus accessibles le midi que le soir.</li>
+              <li><strong>Rue Boulegon</strong> — plusieurs restaurants et terrasses très agréables.</li>
+            </ul>
+          </article>
+          
+          <article class="card">
+            <h3>Boire un verre</h3>
+            <ul class="plain-list">
+              <li><strong>Brasserie du Grillon</strong> (cours Mirabeau) — une véritable institution aixoise aux prix très raisonnables, idéale pour un verre en terrasse.</li>
+              <li><strong>Le Vieux Tonneau</strong> — sympathique pour un verre accompagné d'une petite restauration, fréquenté surtout par des Aixois.</li>
+              <li><strong>Hôtel de Caumont</strong> — un verre dans un jardin particulièrement charmant.</li>
+              <li><strong>Béchard</strong> (cours Mirabeau) — célèbre pâtisserie, parfaite pour une halte gourmande.</li>
+            </ul>
+          </article>
+          
+          <article class="card">
+            <h3>Les marchés (le matin)</h3>
+            <ul class="plain-list">
+              <li><strong>Marché provençal</strong> (fruits, légumes, artisanat, tissus...) — mardis, jeudis et samedis matin, place de Verdun et dans plusieurs rues du centre.</li>
+              <li><strong>Marché de la place Richelme</strong> (alimentaire) — tous les matins.</li>
+              <li><strong>Marché aux fleurs</strong> — mardis, jeudis et samedis matin, place de l'Hôtel de Ville.</li>
+              <li><strong>Marché aux vêtements</strong> — mardis, jeudis et samedis matin, cours Mirabeau.</li>
+            </ul>
+          </article>
+        </div>
+        
+        <p style="text-align: center; margin-top: 2rem; color: var(--muted);">Nous vous souhaitons un excellent séjour à Aix-en-Provence !</p>
       </section>
 
-      <!-- SECTION : Departure -->
       <section class="section-shell section-tinted" id="departure">
         <div class="section-heading">
-          <p class="eyebrow">Départ</p>
-          <h2>Avant de partir</h2>
-          <p>Une petite checklist avant de rendre les clés.</p>
+          <p class="eyebrow">Avant de partir</p>
+          <h2>Procédure de départ</h2>
+          <p>Voici un petit point rapide avant de prendre la route.</p>
         </div>
-        <!-- Vous pouvez ajouter vos instructions de départ ici -->
+        
+        <div class="grid departure-grid">
+          <article class="card">
+            <ul class="checklist">
+              <li><strong>Vaisselle et Poubelles :</strong> Pensez bien à faire votre vaisselle et à jeter les poubelles.</li>
+              <li><strong>Énergie :</strong> Éteindre les lumières et les appareils.</li>
+              <li><strong>Aération :</strong> Je vous serais reconnaissant(e) de bien vouloir laisser la fenêtre de la salle de bain ouverte afin d'aérer les lieux.</li>
+              <li><strong>Info Ménage :</strong> L'aspirateur se trouve à côté du frigo, les produits ménagers pour la salle de bain et la cuisine se trouvent dans le placard de la cuisine, en haut.</li>
+              <li><strong>Info Ménage :</strong> Merci de bien penser à enlever les draps afin de les disposer sur la machine à laver</li>
+              <li><strong>Info Ménage :</strong> Si vous n'avez pas envie de vous encombrer avec le ménage ou si vous ne pouvez pas le faire ( départ très tôt etc ...) nous vous proposons de faire appel à une société pour le ménage à hauteur de 40€ pour la durée du séjour..</li>
+              <li><strong>Heure de départ :</strong> L'appartement doit être libéré pour 11h, car l'agent d'entretien arrivera à cette heure pour préparer le logement.</li>
+            </ul>
+          </article>
+          
+          <article class="card">
+            <h3>Rendre les clés</h3>
+            <p>Il faut mettre les clés dans la boîte aux lettres grise du bas qui se trouve sur le mur jaune devant la maison.</p>
+            <p style="font-style: italic; color: var(--muted); margin-bottom: 1rem;">J'espère que votre séjour s'est bien passé. Merci infiniment pour votre compréhension et votre coopération !</p>
+            <img src="assets/images/remise_des_cles.jpg" alt="Boîte aux lettres pour rendre les clés" style="width:100%; max-width:350px; border-radius:8px; display:block; margin: 0 auto;" />
+          </article>
+        </div>
       </section>
 
     </main>
