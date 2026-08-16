@@ -181,7 +181,6 @@
       @media (min-width: 980px) {
         .section-shell { margin-top: 2rem; padding-top: 1.5rem; }
         .top-nav { justify-content: center; }
-        /* AJOUT : L'affichage en 3 colonnes pour la galerie photo */
         .cards-essentials, .appliance-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       }
     </style>
@@ -227,7 +226,6 @@
           </div>
         </div>
         <div class="hero-art">
-          <!-- Modification ici : la photo de la chambre (Tamaris_12.jpg) remplace celle de la terrasse -->
           <img src="assets/images/Tamaris_12.jpg" alt="Vue de la chambre Tamaris" width="1400" height="1400" fetchpriority="high" />
         </div>
       </section>
@@ -337,22 +335,16 @@
             <img src="assets/images/al_1.jpg" alt="Itinéraire" style="width:100%; border-radius:8px; margin-top:10px;" />
           </article>
           
-          <!-- Modification ici : la disposition côte à côte avec le digicode (al_2) et la terrasse (Tamaris_3) -->
           <article class="card appliance-card">
-            <h3>2. L'entrée</h3>
-            <p>L'accès direct à la chambre par le côté. (nous pouvons laisser les clefs au préalable sur la serrure)</p>
-            
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px;">
-              <div>
-                <span style="display: block; font-size: 0.85rem; margin-bottom: 5px; color: var(--muted);">Sonnette / Digicode</span>
-                <img src="assets/images/al_2.jpg" alt="Sonnette et digicode" style="width:100%; border-radius:8px; height: 250px; object-fit: cover;" />
-              </div>
-              <div>
-                <span style="display: block; font-size: 0.85rem; margin-bottom: 5px; color: var(--muted);">Accès terrasse</span>
-                <img src="assets/images/Tamaris_3.jpg" alt="Accès à la terrasse" style="width:100%; border-radius:8px; height: 250px; object-fit: cover;" />
-              </div>
-            </div>
-            
+            <h3>2. Digicode & Sonnette</h3>
+            <p>Vous pouvez sonner ou utiliser le digicode pour ouvrir le portail.</p>
+            <img src="assets/images/al_2.jpg" alt="Sonnette et digicode" style="width:100%; border-radius:8px; margin-top:10px;" />
+          </article>
+
+          <article class="card appliance-card">
+            <h3>3. L'entrée</h3>
+            <p>L'accès direct à l'appartement par la terrasse.</p>
+            <img src="assets/images/Tamaris_3.jpg" alt="Accès à la terrasse" style="width:100%; border-radius:8px; margin-top:10px;" />
           </article>
         </div>
       </section>
